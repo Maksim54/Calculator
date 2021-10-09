@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcstyle.css" type="text/css">
+</head>
+<body>
+<h1>Время</h1>
+<br>
+<img src="images/time.gif" alt="picture" id="picture">
+<h3 id="online">Онлайн калькулятор позволит вам преобразовать временные измерения из одних единиц в другие.
+    При этом всего за несколько секунд вы сможете перевести минуты в часы, часы в секунды, минуты в секунды
+    или дни в часы, словом какие бы операции временные вам не понадобились, все это будет сделать легко и просто
+    с помощью данного калькулятора.
+<br>
+    <br>
+    После того, как секунды стали международными единицами измерения времени и общепризнанной точкой отсчета, было
+    отмечено, что длительность солнечных суток в течение года отклоняется от среднего значения на доли секунд. Поэтому
+    были введены юлианские сутки, равные 86 400 с ровно, и соответственно юлианский год, называемый еще научным годом.
+    Накопившиеся «лишние секунды» образуют каждые 4 года дополнительный день в григорианском году – 29 февраля.
+</h3>
+<form name="time1" id="times" onclick="return validateForm()" method="post">
+    <label for="all">Write right here</label>
+    <input type="number" name="all" id="all"> second/seconds
+    <!--<input type="number" name="all" id="all"> milisecond-->
+    <br>
+    <fieldset>
+        <legend>Vali valuuta:</legend> <!--рамка-->
+        <input type="radio" name="choose" id="minute" value="minute" onchange="radioChange(event)">
+        <label for="minute">Minute</label>
+        <br>
+        <input type="radio" name="choose" id="hour" value="hour" onchange="radioChange(event)">
+        <label for="hour">Hour</label>
+        <br>
+        <input type="radio" name="choose" id="day" value="day" onchange="radioChange(event)">
+        <label for="day">Day</label>
+        <br>
+        <br>
+        <input type="radio" name="choose" id="week" value="week" onchange="radioChange(event)">
+        <label for="week">Week</label>
+        <br>
+        <input type="radio" name="choose" id="month" value="month" onchange="radioChange(event)">
+        <label for="month">Month</label>
+        <br>
+        <input type="radio" name="choose" id="year" value="year" onchange="radioChange(event)">
+        <label for="year">Year</label>
+        <br>
+        <br>
+        <input type="radio" name="choose" id="century" value="century" onchange="radioChange(event)">
+        <label for="century">Century</label>
+        <br>
+    </fieldset>
+    <div id="answer">Here you will see the answer.</div>
+</form>
+<script src="calcJava.js"></script>
+<br>
+<br>
+<a href=""
+		 target="blank">Github work here</a>
+<br>
+<br>
+<footer>
+&copy;Maksim Lagunovski.
+</footer>
+<br>
+<a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png">
+     </a>
+     <a href="https://jigsaw.w3.org/css-validator/check/referer">
+         <img style="border:0;width:88px;height:31px"
+             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+             alt="Valid CSS!" />
+     </a>
+</body>
+</html>
